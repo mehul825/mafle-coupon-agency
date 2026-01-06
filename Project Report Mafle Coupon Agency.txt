@@ -1,0 +1,80 @@
+Project Report: Mafle Coupon Agency Application
+1. Executive Summary
+Mafle is a full-stack web application designed for a digital coupon and voucher distribution agency. The platform consists of a modern, high-performance public frontend for brand presence and a secure Admin Dashboard for internal management.
+
+2. Admin Access Credentials
+The application includes a secure Admin Panel for managing contacts and future resources (coupons, partners).
+
+Role	Email	Password	Login URL
+Super Admin	admin@mafle.com	admin	http://localhost:5173/login
+Note: This is a default admin account created for development/testing purposes.
+
+3. Key Features Implemented
+Frontend (Client-Facing)
+Modern UI/UX: Built with React and Tailwind CSS v4, featuring glassmorphism effects, smooth gradients, and mobile-first responsiveness.
+Dark Mode: System-aware dark mode with a manual toggle, persisting user preference.
+Legal Pages: Dedicated Privacy Policy and Terms of Service pages with SEO metadata (using react-helmet-async).
+Partner Showcase: Dynamic logo display for partners (Google Pay, Flipkart, etc.) with mobile-optimized interactions.
+Contact Form: Functional contact form that sends data to the backend.
+Backend (Server-Side)
+API Architecture: Node.js & Express REST API.
+Database: MongoDB integration using Mongoose for data persistence.
+Authentication: Secure JWT-based authentication system with Bcrypt password hashing.
+Data Storage:
+Contacts: Stores customer inquiries with timestamps.
+Users: Manages admin accounts securely.
+Admin Dashboard
+Authentication Gate: Protected route (/admin) requiring valid login.
+Live Data: Real-time integration with the backend to fetch and display Contact Messages.
+Statistics: Summary cards showing total counts of interactions (Total Contacts, etc.).
+4. Technical Stack
+Frontend: React.js, Vite, Tailwind CSS v4, Framer Motion, Axios.
+Backend: Node.js, Express.js, JSON Web Tokens (JWT).
+Database: MongoDB (Local Instance).
+5. Future Roadmap
+Coupon Management: Full CRUD capabilities for adding/editing coupons.
+Partner Management: Interface to add new partners dynamically.
+Service Catalog: Dynamic management of agency services.
+
+
+
+
+////  
+
+Project Report: Mafle Coupon Agency Application
+1. Executive Summary
+Mafle is a full-stack web application designed for a digital coupon and voucher distribution agency. It features a high-performance public frontend for brand presence and a secure Admin Dashboard for internal management.
+
+2. Admin Credentials
+Use these credentials to access the Admin Panel.
+
+Role	Email	Password	Login URL
+Super Admin	admin@mafle.com	admin	http://localhost:5173/admin
+3. Run Commands
+Note: Run these commands in separate terminals.
+//
+Backend (Server)
+cd backend
+npm run dev
+Expected Output: Server running on port 5000
+//
+Frontend (User Interface)
+cd frontend
+npm run dev
+Expected Output: Local: http://localhost:5173/
+
+4. Feature Overview
+✅ Client-Facing Features
+Modern Design: Responsive UI with Tailwind CSS v4, dark mode support, and glassmorphism.
+Partner Showcase: Dynamic logo display for partners (Google Pay, Flipkart, etc.).
+Legal Compliance: Dedicated Privacy Policy and Terms of Service pages.
+Contact System: Functional contact form integrating directly with the database.
+✅ Admin Features
+Secure Access: Protected routes requiring authentication.
+Live Dashboard: View real-time contact messages from users.
+Data Persistence: All data is securely stored in MongoDB.
+5. Technology Stack
+Frontend: React.js, Vite, Tailwind CSS v4.
+Backend: Node.js, Express.js.
+Database: MongoDB (Local).
+Auth: JWT & Bcrypt.
