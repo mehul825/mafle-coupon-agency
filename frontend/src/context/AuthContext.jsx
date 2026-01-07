@@ -16,21 +16,16 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     const login = async (email, password) => {
-        try {
-            const config = {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            };
-
-            const { data } = await axios.post('http://localhost:5000/api/auth/login', { email, password }, config);
-
-            setUser(data);
-            localStorage.setItem('userInfo', JSON.stringify(data));
-            return data;
-        } catch (error) {
-            throw error.response?.data?.message || error.message;
-        }
+        // Mock login for demonstration
+        const mockUser = {
+            _id: 'mock_id_123',
+            name: 'Admin User',
+            email: email,
+            token: 'mock_token_xyz'
+        };
+        setUser(mockUser);
+        localStorage.setItem('userInfo', JSON.stringify(mockUser));
+        return mockUser;
     };
 
     const logout = () => {
